@@ -1,0 +1,2 @@
+# agricultural_satellite_classifier
+agricultural_satellite_classifier
