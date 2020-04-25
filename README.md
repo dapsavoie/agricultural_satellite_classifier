@@ -19,6 +19,6 @@ Can take in an image and display a predicted class along with the image. Works f
 Uses an uploaded h5 file. 
 
 
-Create_train_set_fit_model:
+<b> Create_train_set_fit_model: </b>
 Create a trained model 2000 images. The random state in train_test_split really impacted the loss function and precision. This is a messy file with a bit of everything but leaving as is, as it works. The model can be loaded like in the Quick Classifier. 
 
