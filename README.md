@@ -10,6 +10,14 @@ The target variables are plotted below:
 
 ![image](target_variables.png)
 
+##  Target variables  & Their Relevance to Agriculture:
+
+Cloud_Shadow: Cloud coverage is common at critical times of the agricultural season. This cloud coverage impacts the ability of remote sensing technologies such as satellites from obtaining clear views of the earth. Understanding and classifying these will improve the ability to create clearer images in the future. 
+
+Standing_Water: Most crops cannot survive for long under water. Waterlogged fields can cause problems for crop yields and pose long term threats to the environment. By identifying the location of these, not only can crops be saved but drainage sysems can be planned around it.
+
+
+
 
 ## Current Progress
 
