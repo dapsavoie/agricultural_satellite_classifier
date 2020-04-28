@@ -33,3 +33,5 @@ Uses an uploaded h5 file.
 <b> Create_train_set_fit_model: </b>
 Create a trained model 2000 images. The random state in train_test_split really impacted the loss function and precision. This is a messy file with a bit of everything but leaving as is, as it works. The model can be loaded like in the Quick Classifier. 
 
+<b> Sorting RGB Files: </b>
+This file contains helper functions to sort images in unlabelled folders(such as rgb/nir) into their respective categories. This can be used to create better training data. 
