@@ -38,7 +38,12 @@ Create a trained model 2000 images. The random state in train_test_split really 
 <b> Sorting RGB Files: </b>
 This file contains helper functions to sort images in unlabelled folders(such as rgb/nir) into their respective categories. This can be used to create better training data. 
 
+<b> Results </b>
 
+| Model       | Accuracy    |
+| ----------- | ----------- |
+| Jaccard_1   | Title       |
+| Cross_1     | 70%         |
 
 
 Sources:
