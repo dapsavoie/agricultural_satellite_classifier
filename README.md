@@ -42,7 +42,7 @@ This file contains helper functions to sort images in unlabelled folders(such as
 
 | Model       | Accuracy    |
 | ----------- | ----------- |
-| 72_88_bin_seq | Title       |
+| 72_88_bin_seq | 71%       |
 | 50_epoch_2  | 70%         |
 
 
