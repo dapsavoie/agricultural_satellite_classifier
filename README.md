@@ -42,8 +42,8 @@ This file contains helper functions to sort images in unlabelled folders(such as
 
 | Model       | Accuracy    |
 | ----------- | ----------- |
-| Jaccard_1   | Title       |
-| Cross_1     | 70%         |
+| 72_88_bin_seq | Title       |
+| 50_epoch_2  | 70%         |
 
 
 Sources:
