@@ -10,14 +10,11 @@ Pattern recognition from aerial agricultural images presents several challenges.
 
 There are 6 target variables: Cloud shadow, Double plant, Planter skip, Standing Water, Waterway and Weed cluster. These features are considered to have large impacts on the yield of farmland. Improving the ability to locate them is relevant to improving potential yields on farmland. There is a high level of difficulty in adressing potential overlaps between patterns and finding the best ways to process such a large amount of data in a memory efficent way.
 
-The target variables are plotted below:
-
-![image](target_variables.png)
-
 ### Cloud_Shadow: 
 Cloud coverage is common at critical times of the agricultural season. This cloud coverage impacts the ability of remote sensing technologies such as satellites from obtaining clear views of the earth. Understanding and classifying these will improve the ability to create clearer images in the future. 
 
-### Double Planter:
+### Double Planter: 
+Double planting means planting multiple crops in the same area and in same yeaer so that theland can be used to genreate more than one crop per year. Identifying this is critical to evaluating the health of a field, managing water resources and improving soil quality. 
 
 ### Planter_Skip: 
 A planter is farm implement that sows eeds in rows through a field. Effective use of this tool remotely requires equipping it with locational awareness. Efficent use of planters is critical. By understanding the patterns left behind by planters, the optimum time, soil quality and environmental factors can be deduced. 
@@ -27,10 +24,15 @@ A planter is farm implement that sows eeds in rows through a field. Effective us
 Most crops cannot survive for long under water. Waterlogged fields can cause problems for crop yields and pose long term threats to the environment. By identifying the location of these, not only can crops be saved but drainage sysems can be planned around it.
 
 ### Waterway:
-
+Waterways are critical in both providing water for agriculture via irrigation and for the health of the surronding populations that may rely on the waterway as a key source of drinking water. Identifying waterways can enable better irrigation planning and environmental resource management to ensure industral waste is not running off into the river. 
 
 ### Weed Cluster: 
+Weed clusters have significant impact on the productivity of crop yields and identifying them is critical to preventing their growth. Due to the prevalence of this in fields, it represent a big part of our dataset.
 
+
+The target variables are plotted below:
+
+![image](target_variables.png)
 
 ## Current Progress
 
