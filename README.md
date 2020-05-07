@@ -54,7 +54,7 @@ This file contains helper functions to sort images in unlabelled folders(such as
 | ----------- | ----------- |
 | 72_88_bin_seq | 71%       |
 | adam_78  | 76%         |
-
+| rmsprop     | 73%            |
 
 Sources:
 Agriculture-Vision: A Large Aerial Image Database for Agricultural Pattern Analysis
