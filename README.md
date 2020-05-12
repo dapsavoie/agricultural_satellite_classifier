@@ -8,6 +8,9 @@ Pattern recognition from aerial agricultural images presents several challenges.
 
 ## Business Value 
 
+With the growth of global populations, agriculture is being placed under increasing pressure to increaze yields and maximize efficeny. Satellite images have become regularly employed to monitor agricultural activities and provide important data to estimate crop conditions and yields. 
+
+This project seeks to develop a set of best practices that can be applied to current and historical satellite data to identify and segment images based on several important features that impact crop yield. The classifier developed in this project can be deployed by farmers and agricultural researchers to identify critical features in their field and better understand the impacts these can have on yield. I hope that by building this project, data science can be used to improve security for people worldwide and that farmers are secure in knowing that they have access to the best technology, research and data possible. 
 
 ## Process/Methodology
 
