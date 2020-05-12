@@ -4,7 +4,37 @@
 
 This github repo has been created to store files related to the Agricultural Vision Segmentation Challenge. The dataset contains 21,061 aerial images of farmland in the United States. Each image contains 512x512 color channels which are RGB and Near Infra-Red. The images come with bounded copies indicated region of the farmland. The mask indicates valid pixels. 
 
-Pattern recognition from aerial agricultural images presents several challenges. This includes the variations of patterns you are looking to classify, the amount of annotated patters and the properties of the annotation(like shape, texture or depth). This distinguishes aerial pattern recognition from object recognition and the former is a more challenged task. To quote the creators of the dataset "semantic segmentation of aerial farmland images requires inference over extremely large-size images with extreme annotation sparsity. These challenges are not present in most of the common object datasets, and we show that they are more challenging than many other aerial image datasets."*
+Pattern recognition from aerial agricultural images presents several challenges. This includes the variations of patterns you are looking to classify, the amount of annotated patters and the properties of the annotation(like shape, texture or depth). This distinguishes aerial pattern recognition from object recognition and the former is a more challenged task. To quote the creators of the dataset "semantic segmentation of aerial farmland images requires inference over extremely large-size images with extreme annotation sparsity. These challenges are not present in most of the common object datasets, and we show that they are more challenging than many other aerial image datasets.
+
+## Process/Methodology
+
+Model Evaluation:
+This notebook contains the most successful models based on the previous 2 weeks of testing and optimization. A peak classification rate of 76% was achieved based on optimizing and improving previous models. Adjustments to the loss function and out put layer were made. 
+
+Both resnet and vgg16 were experiments with but proved ineffective at categorizing the imbalanced dataset both with and without augmnentation. The gradients exploded or went to zero and the multiple changes of batch size and loss function were unsuccesful.
+
+The CNN classifier used proved to be most effective with a starting accuracy of 70% that was increased by using an adam optimizer and 20 epochs. The results can be seen below.
+
+                precision    recall  f1-score   support
+
+  cloud_shadow       0.62      0.70      0.66       209
+double_planter       0.70      0.57      0.63       440
+  planter_skip       0.00      0.00      0.00        23
+standing_water       0.70      0.43      0.53       289
+      waterway       0.56      0.35      0.43       511
+  weed_cluster       0.80      0.90      0.85      2959
+
+      accuracy                           0.76      4431
+     macro avg       0.56      0.49      0.52      4431
+  weighted avg       0.74      0.76      0.74      4431
+
+## Analysis and Improvements
+In order to further improve the model, many more experiments would need to be carried out to optimize the epochs, batch size, loss function and layers.
+
+The best model was trained on 20 epochs and this enabled the cnn to pick up the features that distinguish weed clusters from everything else. Distinguishing weed clusters and cloud shadows is very important to other targets as weed clusters can be confused for grass around waterways. Cloud shadows are also veyr important in satellite imaging and impacts the ability to recognize other characteristics.
+
+Future models could be improved by removing planter skips and training these in a seperate model to understand how to get these picked up. Further work on pixel segmentation would be also improve performance as single images can contain multiple target variables which can decrease accuracy of classifcation.
+
 
 ##  Target variables  & Their Relevance to Agriculture:
 
@@ -19,7 +49,6 @@ Double planting means planting multiple crops in the same area and in same yeaer
 ### Planter_Skip: 
 A planter is farm implement that sows eeds in rows through a field. Effective use of this tool remotely requires equipping it with locational awareness. Efficent use of planters is critical. By understanding the patterns left behind by planters, the optimum time, soil quality and environmental factors can be deduced. 
 
-
 ### Standing_Water: 
 Most crops cannot survive for long under water. Waterlogged fields can cause problems for crop yields and pose long term threats to the environment. By identifying the location of these, not only can crops be saved but drainage sysems can be planned around it.
 
@@ -28,7 +57,6 @@ Waterways are critical in both providing water for agriculture via irrigation an
 
 ### Weed Cluster: 
 Weed clusters have significant impact on the productivity of crop yields and identifying them is critical to preventing their growth. Due to the prevalence of this in fields, it represent a big part of our dataset.
-
 
 The target variables are plotted below:
 
@@ -40,7 +68,6 @@ The target variables are plotted below:
 Can take in an image and display a predicted class along with the image. Works fine for train data but it sees weed clusters everywhere for the test data. Model used is 85% at .65 loss function. 
 
 Uses an uploaded h5 file. 
-
 
 <b> Create_train_set_fit_model: </b>
 Create a trained model 2000 images. The random state in train_test_split really impacted the loss function and precision. This is a messy file with a bit of everything but leaving as is, as it works. The model can be loaded like in the Quick Classifier. 
