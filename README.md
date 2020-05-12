@@ -15,6 +15,16 @@ Both resnet and vgg16 were experiments with but proved ineffective at categorizi
 
 The CNN classifier used proved to be most effective with a starting accuracy of 70% that was increased by using an adam optimizer and 20 epochs. The results can be seen below.
 
+<b> Results </b>
+
+| Model       | Accuracy    |
+| ----------- | ----------- |
+| 72_88_bin_seq | 71%       |
+| adam_78  | 76%         |
+| rmsprop     | 73%            |
+
+<b> Classification Report </b>
+
 ![image](classification_report.png)
 
 ## Analysis and Improvements
@@ -51,26 +61,35 @@ The target variables are plotted below:
 
 ![image](target_variables.png)
 
-## Current Progress
+## Files in Repo
 
-<b> Quick Classifier: </b>
+<b> Adam Optimizer - 73% </b>
+First attempt at a model with decent accuracy. Improved in the next notebook.
+
+<b> Adam Optimizer 20 epochs </b>
+Added more epochs. Changed batch size but found 32 worked best. 
+
+<b> Model_Evaluation</b>
+
+This contains all the working models, information on their parameters, visualisations of the layers and their performance. Useful to see what worked best and why.
+
+<b> Single Image Classifier</b>
 Can take in an image and display a predicted class along with the image. Works fine for train data but it sees weed clusters everywhere for the test data. Model used is 85% at .65 loss function. 
 
 Uses an uploaded h5 file. 
+
+<b> Sorting RGB Files: </b>
+This file contains helper functions to sort images in unlabelled folders(such as rgb/nir) into their respective categories. This can be used to create better training data.
+
+<b> CNN_1 </b>
+
+A low layer model that produced exploding gradients. Useful for testing but not a good model. 
 
 <b> Create_train_set_fit_model: </b>
 Create a trained model 2000 images. The random state in train_test_split really impacted the loss function and precision. This is a messy file with a bit of everything but leaving as is, as it works. The model can be loaded like in the Quick Classifier. 
 
 <b> Sorting RGB Files: </b>
 This file contains helper functions to sort images in unlabelled folders(such as rgb/nir) into their respective categories. This can be used to create better training data. 
-
-<b> Results </b>
-
-| Model       | Accuracy    |
-| ----------- | ----------- |
-| 72_88_bin_seq | 71%       |
-| adam_78  | 76%         |
-| rmsprop     | 73%            |
 
 Sources:
 Agriculture-Vision: A Large Aerial Image Database for Agricultural Pattern Analysis
