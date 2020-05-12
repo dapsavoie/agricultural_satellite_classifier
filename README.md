@@ -23,6 +23,8 @@ The CNN classifier used proved to be most effective with a starting accuracy of 
 | adam_78  | 76%         |
 | rmsprop     | 73%            |
 | test model     | 64%            |
+
+
 <b> Classification Report </b>
 
 ![image](classification_report.png)
