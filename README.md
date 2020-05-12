@@ -15,7 +15,7 @@ Both resnet and vgg16 were experiments with but proved ineffective at categorizi
 
 The CNN classifier used proved to be most effective with a starting accuracy of 70% that was increased by using an adam optimizer and 20 epochs. The results can be seen below.
 
-
+![image](classification_report.png)
 
 ## Analysis and Improvements
 In order to further improve the model, many more experiments would need to be carried out to optimize the epochs, batch size, loss function and layers.
