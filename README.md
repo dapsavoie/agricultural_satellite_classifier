@@ -15,17 +15,7 @@ Both resnet and vgg16 were experiments with but proved ineffective at categorizi
 
 The CNN classifier used proved to be most effective with a starting accuracy of 70% that was increased by using an adam optimizer and 20 epochs. The results can be seen below.
 
-                precision    recall  f1-score   support
-  cloud_shadow       0.62      0.70      0.66       209
-double_planter       0.70      0.57      0.63       440
-  planter_skip       0.00      0.00      0.00        23
-standing_water       0.70      0.43      0.53       289
-      waterway       0.56      0.35      0.43       511
-  weed_cluster       0.80      0.90      0.85      2959
-  
-      accuracy                           0.76      4431
-     macro avg       0.56      0.49      0.52      4431
-  weighted avg       0.74      0.76      0.74      4431
+
 
 ## Analysis and Improvements
 In order to further improve the model, many more experiments would need to be carried out to optimize the epochs, batch size, loss function and layers.
