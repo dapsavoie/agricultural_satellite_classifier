@@ -6,6 +6,9 @@ This github repo has been created to store files related to the Agricultural Vis
 
 Pattern recognition from aerial agricultural images presents several challenges. This includes the variations of patterns you are looking to classify, the amount of annotated patters and the properties of the annotation(like shape, texture or depth). This distinguishes aerial pattern recognition from object recognition and the former is a more challenged task. To quote the creators of the dataset "semantic segmentation of aerial farmland images requires inference over extremely large-size images with extreme annotation sparsity. These challenges are not present in most of the common object datasets, and we show that they are more challenging than many other aerial image datasets.
 
+## Business Value 
+
+
 ## Process/Methodology
 
 Model Evaluation:
