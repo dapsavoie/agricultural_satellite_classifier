@@ -98,6 +98,9 @@ Create a trained model 2000 images. The random state in train_test_split really 
 <b> Sorting RGB Files: </b>
 This file contains helper functions to sort images in unlabelled folders(such as rgb/nir) into their respective categories. This can be used to create better training data. 
 
+<b> Export_files_to_google_bucket: </b>
+Created a google bucket to store files from google drive in the google cloud platform. The goal of this is to be a cloud based database that can handle high volums of requests. It also enables easier analysis regardless of local computing power. 
+
 Sources:
 Agriculture-Vision: A Large Aerial Image Database for Agricultural Pattern Analysis
 https://arxiv.org/abs/2001.01306
