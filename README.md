@@ -41,6 +41,13 @@ The CNN classifier used proved to be most effective with a starting accuracy of 
 
 <b> Predictions </b> 
 
+| Category   | Probability  |
+| ----------- | ----------- |
+| double_planter | 0.824       |
+| weed_cluster  | 0.0443         |
+| standing_water     | 0.0193     |
+
+
 double_planter (0.824)
 weed_cluster (0.0443)
 standing_water (0.0193)
