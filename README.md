@@ -39,7 +39,7 @@ The CNN classifier used proved to be most effective with a starting accuracy of 
 ## Example Prediction
 ![image](double_planter.png)
 
-# Predictions 
+<b> Predictions </b> 
 
 double_planter (0.824)
 weed_cluster (0.0443)
