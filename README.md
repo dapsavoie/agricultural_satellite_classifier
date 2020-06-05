@@ -33,11 +33,11 @@ The CNN classifier used proved to be most effective with a starting accuracy of 
 
 <b> Classification Report </b>
 
-![image](classification_report.png)
+![image](images/classification_report.png)
 
 
 ## Example Prediction
-![image](double_planter.png)
+![image](images/double_planter.png)
 
 <b> Predictions </b> 
 
@@ -84,7 +84,7 @@ Weed clusters have significant impact on the productivity of crop yields and ide
 
 The target variables are plotted below:
 
-![image](target_variables.png)
+![image](images/target_variables.png)
 
 ## Files in Repo
 
@@ -106,7 +106,7 @@ Can take in an image and display a predicted class along with the image. Works f
 <b> Sorting RGB Files: </b>
 This file contains helper functions to sort images in unlabelled folders(such as rgb/nir) into their respective categories. This can be used to create better training data.
 
-<b> CNN_1 </b>
+<b> CNN_1: </b>
 A low layer model that produced exploding gradients. Useful for testing but not a good model. 
 
 <b> Create_train_set_fit_model: </b>
