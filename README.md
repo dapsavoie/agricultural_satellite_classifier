@@ -84,6 +84,19 @@ The target variables are plotted below:
 
 ## Files in Repo
 
+### Helper Functions 
+
+<b> Single Image Classifier</b>
+Can take in an image and display a predicted class along with the image. Works fine for train data but it sees weed clusters everywhere for the test data. Model used is 85% at .65 loss function. Uses an uploaded h5 file. 
+
+<b> Export_files_to_google_bucket: </b>
+Created a google bucket to store files from google drive in the google cloud platform. The goal of this is to be a cloud based database that can handle high volums of requests. It also enables easier analysis regardless of local computing power. 
+
+<b> Sorting RGB Files: </b>
+This file contains helper functions to sort images in unlabelled folders(such as rgb/nir) into their respective categories. This can be used to create better training data.
+
+### Models
+
 <b> Adam Optimizer - 73% </b>
 First attempt at a model with decent accuracy. Improved in the next notebook.
 
@@ -92,15 +105,6 @@ Added more epochs. Changed batch size but found 32 worked best.
 
 <b> Create_train_set_fit_model: </b>
 Create a trained model 2000 images. The random state in train_test_split really impacted the loss function and precision. This is a messy file with a bit of everything but leaving as is, as it works. The model can be loaded like in the Quick Classifier. 
-<b> Model_Evaluation</b>
-
-This contains all the working models, information on their parameters, visualisations of the layers and their performance. Useful to see what worked best and why.
-
-<b> Single Image Classifier</b>
-Can take in an image and display a predicted class along with the image. Works fine for train data but it sees weed clusters everywhere for the test data. Model used is 85% at .65 loss function. Uses an uploaded h5 file. 
-
-<b> Sorting RGB Files: </b>
-This file contains helper functions to sort images in unlabelled folders(such as rgb/nir) into their respective categories. This can be used to create better training data.
 
 <b> CNN_1: </b>
 A low layer model that produced exploding gradients. Useful for testing but not a good model. 
@@ -108,11 +112,11 @@ A low layer model that produced exploding gradients. Useful for testing but not 
 <b> Create_train_set_fit_model: </b>
 Create a trained model 2000 images. The random state in train_test_split really impacted the loss function and precision. This is a messy file with a bit of everything but leaving as is, as it works. The model can be loaded like in the Quick Classifier. 
 
-<b> Sorting RGB Files: </b>
-This file contains helper functions to sort images in unlabelled folders(such as rgb/nir) into their respective categories. This can be used to create better training data. 
+<b> Model_Evaluation</b>
 
-<b> Export_files_to_google_bucket: </b>
-Created a google bucket to store files from google drive in the google cloud platform. The goal of this is to be a cloud based database that can handle high volums of requests. It also enables easier analysis regardless of local computing power. 
+This contains all the working models, information on their parameters, visualisations of the layers and their performance. Useful to see what worked best and why.
+
+
 
 Sources:
 Agriculture-Vision: A Large Aerial Image Database for Agricultural Pattern Analysis
